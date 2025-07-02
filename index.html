@@ -6,26 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Pixel Facebook -->
-    <!-- Pixel Facebook -->
-<script>
-    !function(f,b,e,v,n,t,s){
-        if(f.fbq)return;n=f.fbq=function(){
-            n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)
-        };
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)
-    }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    <script>
+        !function(f,b,e,v,n,t,s){
+            if(f.fbq)return;n=f.fbq=function(){
+                n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+            };
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)
+        }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-    fbq('init', '1032381935101857');
-    fbq('track', 'PageView');
-</script>
+        fbq('init', '1032381935101857');
+        fbq('track', 'PageView');
+    </script>
 
-<noscript>
-    <img height="1" width="1" style="display:none"
-         src="https://www.facebook.com/tr?id=1032381935101857&ev=PageView&noscript=1"/>
-</noscript>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=1032381935101857&ev=PageView&noscript=1"/>
+    </noscript>
 
     <style>
         body {
@@ -57,6 +56,7 @@
             cursor: pointer;
             text-decoration: none;
             transition: background-color 0.3s ease;
+            display: inline-block;
         }
 
         .btn:hover {
@@ -67,12 +67,16 @@
 <body>
     <img src="banerprivacy.png" alt="MC Mirella Privacy Banner">
     <h1>Parabéns! Seu acesso foi liberado ✅</h1>
-    <p>Clique no botão abaixo para entrar na chamada de vídeo com a MC Mirella 🔥</p>
+    <p>Clique em uma das opções abaixo e aproveite 🔥</p>
+
+    <!-- Botão 1: Chamada ao vivo -->
     <a href="https://acesso-grupo-eros.vercel.app/" class="btn" onclick="trackPurchaseOnce();">
         INICIAR CHAMADA AO VIVO
     </a>
-    <a href="https://acesso-grupo-eros.vercel.app/" class="btn" onclick="trackPurchaseOnce();">
-        privacy da mirella
+
+    <!-- Botão 2: Privacy da Mirella -->
+    <a href="https://t.me/+m10g8Wjf8nlmY2Qx" class="btn" onclick="trackPurchaseOnce();">
+        ACESSAR PRIVACY DA MIRELLA 🔞
     </a>
 
     <script>
